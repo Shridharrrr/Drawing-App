@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Mini Paint</h1>
+        
+        <div class="tools">
+            <div class="color-picker">
+                <label for="color">Color:</label>
+                <input type="color" id="color" value="#000000">
+            </div>
+            
+            <div class="brush-size">
+                <label for="size">Size:</label>
+                <input type="range" id="size" min="1" max="50" value="5">
+                <span id="size-value">5</span>
+            </div>
+            
+            <button id="clear">Clear Canvas</button>
+        </div>
+        
+        <canvas id="drawing-canvas"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
